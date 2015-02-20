@@ -1,0 +1,40 @@
+Guo
+Weidong
+weidongg
+
+Status:
+
+part1: Works on all tests.
+part2: Works on all tests.
+part3: Works on all tests.
+part4: Works on all tests.
+part5: Works on all tests.
+part6: Works on all tests.
+part7: Works on all tests.
+
+
+Overall:
+The original Makefile works fine. But just in case, 
+one of my file is called firstSet.txt, which is the source of all the token kind
+names. My firstSet.java uses it.
+
+
+
+
+Answers:
+
+part1: Question 1: The purpose of putback is to take care of the already read in character
+                   c when c turns out not being considered as part of the last token.
+                   But rather it's for the next token. Furthermore, in case of c = '\n',
+                   the program increment linenumbe, and in case of c = EOF, we prompt
+                   error.
+       Question 2: c = '*' and putback = true
+       Question 3: Since /, <, >, and : followed by a '=' will change their original
+                   meanings, so ccase1or2 is to figure out whether they are followed
+                   by '=' and return a token accordingly. Furthermore, ccase2 checks
+                   whether':' is followed by '=' or '[' is followed by ']'; 
+                   if not, errors occur.
+
+
+
+
